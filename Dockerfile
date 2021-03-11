@@ -6,9 +6,11 @@ RUN apt-get update && \
 
 RUN groupadd -g 2000 ninadk
 
-RUN useradd -mr -d /home/ninadk -s /bin/bash -g ninadk -G sudo -u 1001 -p "1234" ninadk && \
+RUN useradd -mr -d /home/ninadk -s /bin/bash -g ninadk -G sudo -u 1001 ninadk && \
     mkdir /home/ninadk/.ssh && \
     chmod 700 /home/ninadk/.ssh
+
+RUN echo 'ninadk:ninadk' | chpasswd
 
 COPY remote-key.pub /home/ninadk/.ssh/authorized_keys
 
