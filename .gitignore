@@ -131,3 +131,5 @@ dmypy.json
 
 # Jenkins project stuff
 jenkins_home/
+jenkins_home/centos7/remote-key
+
