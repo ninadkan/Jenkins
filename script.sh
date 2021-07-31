@@ -1,5 +1,4 @@
 #!/bin/bash
-
 NAME=$1
 SURNAME=$2
 SHOW=$3
