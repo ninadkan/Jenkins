@@ -134,4 +134,5 @@ jenkins_home/
 jenkins_home/centos7/remote-key
 db_data/
 centos7/mysqlbackup.gcloud.json
+pipeline/.Jenkinsfile.swp
 
