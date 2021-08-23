@@ -40,13 +40,13 @@ pipeline {
 
         stage('Push') {
             steps {
-                sh '.pipeline/jenkins/push/push.sh'
+                sh './pipeline/jenkins/push/push.sh'
             }
         }
 
         stage('Deploy') {
             steps {
-                sh '.pipeline/jenkins/deploy/deploy.sh'
+                sh './pipeline/jenkins/deploy/deploy.sh'
             }
         }
     }
